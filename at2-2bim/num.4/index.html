@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+</head>
+<body>
+    <h1>Faça seu pedido de Pizza</h1>
+    <form id="pedidoForm">
+        <div class="form-group">
+            <label for="sabor1">Sabor da Pizza 1:</label>
+            <input type="text" id="sabor1" required>
+        </div>
+        <div class="form-group">
+            <label for="sabor2">Sabor da Pizza 2:</label>
+            <input type="text" id="sabor2" required>
+        </div>
+        <div class="form-group">
+            <label for="sabor3">Sabor da Pizza 3:</label>
+            <input type="text" id="sabor3" required>
+        </div>
+        <div class="form-group">
+            <label for="sabor4">Sabor da Pizza 4:</label>
+            <input type="text" id="sabor4" required>
+        </div>
+        <div class="form-group">
+            <label for="refrigerantes">Quantidade de Refrigerantes:</label>
+            <input type="number" id="refrigerantes" value="0" min="0" required>
+        </div>
+        <button type="button" onclick="calcularPedido()">Enviar Pedido</button>
+    </form>
+    <div class="result" id="result"></div>
+</body>
+<script src="script.js"></script>
+</html>
